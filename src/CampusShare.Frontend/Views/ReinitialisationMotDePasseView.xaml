@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusShare.Frontend.Views.ReinitialisationMotDePasseView"
+             Title="Reinitialisation">
+    <VerticalStackLayout Padding="24" Spacing="14">
+        <Label Text="{Binding Titre}" Style="{StaticResource TitreEcran}" />
+        <Entry Placeholder="Nouveau mot de passe" Text="{Binding NouveauMotDePasse}" IsPassword="True" />
+        <Entry Placeholder="Confirmation" Text="{Binding Confirmation}" IsPassword="True" />
+        <Button Text="Valider" Style="{StaticResource BoutonPrimaire}" Command="{Binding ValiderCommand}" />
+        <Button Text="Retour" Command="{Binding RetourCommand}" />
+    </VerticalStackLayout>
+</ContentPage>

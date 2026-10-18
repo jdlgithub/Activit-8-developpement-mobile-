@@ -1,0 +1,12 @@
+namespace CampusShare.Backend.Contracts.Dtos;
+
+public class MessageDTO
+{
+    public string Id { get; set; } = string.Empty;
+
+    public string EmetteurId { get; set; } = string.Empty;
+
+    public string Contenu { get; set; } = string.Empty;
+
+    public DateTime Horodatage { get; set; }
+}

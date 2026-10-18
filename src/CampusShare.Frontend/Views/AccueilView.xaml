@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusShare.Frontend.Views.AccueilView"
+             Title="CampusShare">
+    <VerticalStackLayout Padding="24" Spacing="16" VerticalOptions="Center">
+        <Label Text="{Binding Titre}" Style="{StaticResource TitreEcran}" HorizontalOptions="Center" />
+        <Label Text="{Binding SousTitre}" Style="{StaticResource SousTitre}" HorizontalTextAlignment="Center" />
+        <Button Text="Se connecter" Style="{StaticResource BoutonPrimaire}" Command="{Binding SeConnecterCommand}" />
+        <Button Text="Creer un compte" Style="{StaticResource BoutonSecondaire}" Command="{Binding SInscrireCommand}" />
+    </VerticalStackLayout>
+</ContentPage>

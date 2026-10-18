@@ -1,0 +1,30 @@
+# Sorties de build .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Artefacts de build et de restauration
+artifacts/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+*.binlog
+
+# Sorties MAUI / Android
+*.apk
+*.aab
+*.keystore
+*.apksigner.log
+
+# Outils et fichiers temporaires
+.vs/
+.idea/
+*.swp
+*.tmp
+*.log
+*.cache
+.DS_Store
+Thumbs.db

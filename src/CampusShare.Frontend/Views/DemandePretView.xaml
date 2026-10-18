@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusShare.Frontend.Views.DemandePretView"
+             Title="Demande de pret">
+    <VerticalStackLayout Padding="24" Spacing="14">
+        <Label Text="{Binding Titre}" Style="{StaticResource TitreEcran}" />
+        <Label Text="Date de debut" Style="{StaticResource SousTitre}" />
+        <DatePicker Date="{Binding DateDebut}" />
+        <Label Text="Date de fin" Style="{StaticResource SousTitre}" />
+        <DatePicker Date="{Binding DateFin}" />
+        <Editor Placeholder="Message au proprietaire" Text="{Binding Message}" HeightRequest="100" />
+        <Button Text="Envoyer la demande" Style="{StaticResource BoutonPrimaire}" Command="{Binding EnvoyerCommand}" />
+        <Button Text="Retour" Command="{Binding RetourCommand}" />
+    </VerticalStackLayout>
+</ContentPage>

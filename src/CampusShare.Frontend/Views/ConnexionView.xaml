@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusShare.Frontend.Views.ConnexionView"
+             Title="Connexion">
+    <VerticalStackLayout Padding="24" Spacing="16">
+        <Label Text="{Binding Titre}" Style="{StaticResource TitreEcran}" />
+        <Entry Placeholder="Email universitaire" Text="{Binding Email}" Keyboard="Email" />
+        <Entry Placeholder="Mot de passe" Text="{Binding MotDePasse}" IsPassword="True" />
+        <Button Text="Se connecter" Style="{StaticResource BoutonPrimaire}" Command="{Binding SeConnecterCommand}" />
+        <Button Text="Mot de passe oublie" Style="{StaticResource BoutonSecondaire}" Command="{Binding MotDePasseOublieCommand}" />
+        <Button Text="Creer un compte" Command="{Binding SInscrireCommand}" />
+    </VerticalStackLayout>
+</ContentPage>

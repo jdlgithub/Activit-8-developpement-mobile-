@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusShare.Frontend.Views.Components.EtatErreurView"
+             x:Name="Racine">
+    <Border Style="{StaticResource Carte}">
+        <VerticalStackLayout Spacing="4">
+            <Label Text="Une erreur est survenue" FontAttributes="Bold" TextColor="{StaticResource Secondary}" />
+            <Label Text="{Binding Message, Source={x:Reference Racine}}" TextColor="{StaticResource Gray500}" />
+        </VerticalStackLayout>
+    </Border>
+</ContentView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusShare.Frontend.Views.Components.EtatVideView"
+             x:Name="Racine">
+    <VerticalStackLayout Padding="24" Spacing="8" HorizontalOptions="Center">
+        <Label Text="{Binding Message, Source={x:Reference Racine}}"
+               HorizontalTextAlignment="Center"
+               TextColor="{StaticResource Gray500}" />
+    </VerticalStackLayout>
+</ContentView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:CampusShare.Frontend.Views.Components"
+             x:Class="CampusShare.Frontend.Views.ProfilView"
+             Title="Profil">
+    <VerticalStackLayout Padding="24" Spacing="12">
+        <Label Text="{Binding Titre}" Style="{StaticResource TitreEcran}" />
+        <Label Text="{Binding Profil.Prenom}" FontSize="20" FontAttributes="Bold" />
+        <Label Text="{Binding Profil.Filiere}" Style="{StaticResource SousTitre}" />
+        <Label Text="{Binding Profil.NiveauEtudes}" Style="{StaticResource SousTitre}" />
+        <Label Text="{Binding Profil.NbEchanges, StringFormat='Echanges : {0}'}" />
+        <components:EtatErreurView IsVisible="{Binding AErreur}" Message="{Binding MessageErreur}" />
+        <Button Text="Retour" Command="{Binding RetourCommand}" />
+    </VerticalStackLayout>
+</ContentPage>
